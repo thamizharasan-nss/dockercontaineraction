@@ -4,7 +4,7 @@ on: push
 
 jobs:
   hello-job-world:
-     runs-on: ubuntu
+     runs-on: ubuntu-latest
      name: simple hello job 
      steps:
        - name:  Hello world action step
