@@ -9,6 +9,10 @@ jobs:
      steps:
        - name:  Hello world action step
          id: hello 
-         run: |
-           echo "This is testing job"
+         uses: actions/hello-world-docker-action@v2
+         with:
+          who-to-greet: 'Mona the Octocat'
+
+       - name: Get the output time
+         run: echo "The time was ${{ steps.hello.outputs.time }}"   
            
