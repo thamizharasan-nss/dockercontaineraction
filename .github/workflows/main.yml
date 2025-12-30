@@ -1,0 +1,14 @@
+name: learning the docker action 
+
+on: push 
+
+jobs:
+  hello-job-world:
+     runs-on: ubuntu
+     name: simple hello job 
+     steps:
+       - name:  Hello world action step
+         id: hello 
+         run: |
+           echo "This is testing job"
+           
